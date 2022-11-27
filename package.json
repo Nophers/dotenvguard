@@ -1,8 +1,8 @@
 {
   "name": "dotenvguard",
-  "version": "1.2.5",
+  "version": "1.3.0",
   "description": "Validate your .env variables like a boss",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "mongotest": "tsc && node dist/test/mongocheck.js",
