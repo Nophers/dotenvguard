@@ -4,7 +4,7 @@
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/vkxni)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://github.com/alelievr/Mixture/blob/master/LICENSE)
 
-<p align="center">A simple guard for your environment variables.</p>
+<p align="center">An up-2-date guard for your environment variables.</p>
 
 <p align="center">
 <img src="envguard.png"  alt="envguard" width="250" height="220"/></a>
@@ -33,21 +33,21 @@ $ pnpm add envguard
 
 PostgreSQL 
 ```ts
-import { checkPostgres } from 'envguard';
+import { checkPostgres } from '@vkxni/envguard';
 
 checkPostgres();
 ```
 
 MongoDB
 ```ts
-import { checkMongo } from 'envguard';
+import { checkMongo } from '@vkxni/envguard';
 
 checkMongo();
 ```
 
 Discord 
 ```ts
-import { checkDiscord } from 'envguard';
+import { checkDiscord } from '@vkxni/envguard';
 
 checkDiscord();
 ```
@@ -58,14 +58,14 @@ checkDiscord();
 
 Single
 ```ts
-import { customCheck } from 'envguard';
+import { customCheck } from '@vkxni/envguard';
 
 customCheck("SOME_KEYWORD");
 ```
 
 Array
 ```ts
-import { customChecks } from 'envguard';
+import { customChecks } from '@vkxni/envguard';
 
 customChecks(["SOME_KEYWORD", "ANOTHER_KEYWORD"]);
 ```
