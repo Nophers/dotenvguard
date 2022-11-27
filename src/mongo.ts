@@ -9,18 +9,14 @@ export function checkMongo(): void {
 
   // check if any of the possible ways is included in the dotenv, if not -> throw an error saying that none is set
   if (!mongo_array.some((key: string) => key in process.env)) {
-    console.log(colors.red("MongoError: None of the Mongo URLs are set"));
-    process.exit(1);
+    throw new Error(colors.red("MongoError: None of the Mongo URLs are set"))
   }
 
   // if one of the possible ways is set, check if it is empty
   mongo_array.forEach((key: string) => {
     if (key in process.env) {
       if (process.env[key] === "") {
-        console.log(
-          colors.red(`MongoEmptyError: ${key} is set but string is empty`)
-        );
-        process.exit(1);
+        throw new Error(colors.red(`MongoEmptyError: ${key} is set but string is empty`))
       }
     }
   });

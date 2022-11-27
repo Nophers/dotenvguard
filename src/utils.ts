@@ -12,8 +12,7 @@ export function checkEnv() {
   const envPath = path.resolve(process.cwd(), ".env");
   const envExists = dotenv.config({ path: envPath });
   if (envExists.error) {
-    console.log(colors.red("EnvError: .env file not found"));
-    process.exit(1);
+    throw new Error(colors.red("EnvError: .env file not found"));
   }
 }
 

@@ -9,18 +9,18 @@ export function checkPostgres(): void {
 
   // check if any of the possible ways is included in the dotenv, if not -> throw an error saying that none is set
   if (!postgres_array.some((key: string) => key in process.env)) {
-    console.log(colors.red("PostgresError: None of the Postgres URLs are set"));
-    process.exit(1);
+    throw new Error(
+      colors.red("PostgresError: None of the Postgres URLs are set")
+    );
   }
 
   // if one of the possible ways is set, check if it is empty
   postgres_array.forEach((key: string) => {
     if (key in process.env) {
       if (process.env[key] === "") {
-        console.log(
+        throw new Error(
           colors.red(`PostgresEmptyError: ${key} is set but string is empty`)
         );
-        process.exit(1);
       }
     }
   });

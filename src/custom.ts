@@ -13,15 +13,13 @@ export function customCheck(key: string): void {
   const keyword: string = key;
 
   if (!(keyword in process.env)) {
-    console.log(colors.red(`CustomError: ${keyword} is not set`));
-    process.exit(1);
+    throw new Error(colors.red(`CustomError: ${keyword} is not set`));
   }
 
   if (process.env[keyword] === "") {
-    console.log(
+    throw new Error(
       colors.red(`CustomEmptyError: ${keyword} is set but string is empty`)
     );
-    process.exit(1);
   }
 
   console.log(colors.green(`CustomSuccess: ${keyword} is set`));
@@ -37,15 +35,15 @@ export function customChecks(keys: string[]): void {
 
   keywords.forEach((keyword) => {
     if (!(keyword in process.env)) {
-      console.log(colors.red(`CustomError: ${keyword} is not set`));
-      process.exit(1);
+      throw new Error(
+        colors.red(colors.red(`CustomError: ${keyword} is not set`))
+      );
     }
 
     if (process.env[keyword] === "") {
-      console.log(
+      throw new Error(
         colors.red(`CustomEmptyError: ${keyword} is set but string is empty`)
       );
-      process.exit(1);
     }
 
     console.log(colors.green(`CustomSuccess: ${keyword} is set`));
