@@ -1,0 +1,9 @@
+{
+    "discord_urls": [
+        "BOT_TOKEN",
+        "TOKEN",
+        "AUTH_TOKEN",
+        "CLIENT_ID",
+        "GUILD_ID"
+    ]
+}

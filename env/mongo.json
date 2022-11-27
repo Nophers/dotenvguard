@@ -1,0 +1,22 @@
+{
+  "mongo_urls": [
+    "DATABASE_URL",
+    "MONGO",
+    "MONGO_KEY",
+    "MONGO_URI",
+    "MONGO_DB",
+    "MONGO_USER",
+    "MONGO_PASS",
+    "MONGO_AUTH_SOURCE",
+    "MONGODB_URI",
+    "MONGO_SOURCE",
+    "DATABASE_URL",
+    "MONGOLAB_URI",
+    "MONGO_TOKEN",
+    "MONGOTOKEN",
+    "MONGOHQ_URL",
+    "MONGOLAB_URI",
+    "mongodb",
+    "mongo"
+  ]
+}

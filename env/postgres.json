@@ -1,0 +1,13 @@
+{
+    "postgres_url": [
+        "DATABASE_URL",
+        "POSTGRES_URL",
+        "POSTGRES_URI",
+        "PSQL_URL",
+        "POSTGRESDB_URL",
+        "POSTGRESQL_URL",
+        "POSTGRES_KEY",
+        "postgres",
+        "postgresql"
+    ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "envguard",
+  "version": "1.0.0",
+  "description": "A simple ENV guard",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "mongotest": "tsc && node dist/test/mongocheck.js",
+    "psqltest": "tsc && node dist/test/postgres.js",
+    "discordtest": "tsc && node dist/test/discord.js",
+    "customtest": "tsc && node dist/test/custom.js",
+    "customstest": "tsc && node dist/test/customs.js"
+  },
+  "keywords": [
+    "dotenv",
+    "enviroment",
+    "guard"
+  ],
+  "author": "vKxni",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/colors": "^1.2.1",
+    "@types/node": "^18.11.9"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "typescript": "^4.9.3"
+  }
+}
