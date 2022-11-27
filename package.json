@@ -1,5 +1,5 @@
 {
-  "name": "envguard",
+  "name": "@vkxni/envguard",
   "version": "1.2.0",
   "description": "A simple ENV guard",
   "main": "index.js",
