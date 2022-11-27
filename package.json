@@ -1,7 +1,7 @@
 {
-  "name": "@vkxni/envguard",
-  "version": "1.2.0",
-  "description": "A simple ENV guard",
+  "name": "dotenvguard",
+  "version": "1.2.5",
+  "description": "Validate your .env variables like a boss",
   "main": "index.js",
   "scripts": {
     "build": "tsc",

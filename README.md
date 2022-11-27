@@ -7,7 +7,7 @@
 <p align="center">An up-2-date guard for your environment variables.</p>
 
 <p align="center">
-<img src="envguard.png"  alt="envguard" width="250" height="220"/></a>
+<img src="dotenvguard.png"  alt="dotenvguard" width="250" height="220"/></a>
 <p>
 
 ---
@@ -16,38 +16,38 @@
 
 npm
 ```bash
-$ npm install envguard
+$ npm install dotenvguard
 ```
 
 yarn
 ```bash
-$ yarn add envguard
+$ yarn add dotenvguard
 ```
 
 pnpm
 ```bash
-$ pnpm add envguard
+$ pnpm add dotenvguard
 ```
 
 ### Usage
 
 PostgreSQL 
 ```ts
-import { checkPostgres } from '@vkxni/envguard';
+import { checkPostgres } from 'dotenvguard';
 
 checkPostgres();
 ```
 
 MongoDB
 ```ts
-import { checkMongo } from '@vkxni/envguard';
+import { checkMongo } from 'dotenvguard';
 
 checkMongo();
 ```
 
 Discord 
 ```ts
-import { checkDiscord } from '@vkxni/envguard';
+import { checkDiscord } from 'dotenvguard';
 
 checkDiscord();
 ```
@@ -58,14 +58,14 @@ checkDiscord();
 
 Single
 ```ts
-import { customCheck } from '@vkxni/envguard';
+import { customCheck } from 'dotenvguard';
 
 customCheck("SOME_KEYWORD");
 ```
 
 Array
 ```ts
-import { customChecks } from '@vkxni/envguard';
+import { customChecks } from 'dotenvguard';
 
 customChecks(["SOME_KEYWORD", "ANOTHER_KEYWORD"]);
 ```
